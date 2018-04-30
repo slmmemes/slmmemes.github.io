@@ -26,23 +26,23 @@
         <img id="memePic" alt="SLM-meme">
         
         <script>
-            var memeNumber = Math.floor(Math.random() * 15)
+            var memeNumber = Math.floor(Math.random() * 15) + 1
             var memeFileName = "meme_" + memeNumber + ".jpg";
             document.getElementById("memePic").src = memeFileName;
             
             var memeWidth = 45;
             
-            if (memeNumber == 4)
+            if (memeNumber == 5)
                 memeWidth = 65;
-            else if (memeNumber == 5)
-                memeWidth = 75;
-            else if (memeNumber == 8)
+            else if (memeNumber == 6)
                 memeWidth = 75;
             else if (memeNumber == 9)
-                memeWidth = 25;
-            else if (memeNumber == 10)
                 memeWidth = 75;
+            else if (memeNumber == 10)
+                memeWidth = 25;
             else if (memeNumber == 11)
+                memeWidth = 75;
+            else if (memeNumber == 12)
                 memeWidth = 75;
             
             document.getElementById("memePic").style = "width:" + memeWidth + "%;";
