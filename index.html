@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<meta http-equiv="refresh" content="0; URL='http://www.google.com'" />-->
+        <title>Fresh Memes</title>
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                }
+        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118350680-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118350680-1');
+        </script>
+    </head>
+    <body>
+        
+        <img id="memePic" alt="SLM-meme">
+        
+        <script>
+            var memeNumber = Math.floor(Math.random() * 13)
+            var memeFileName = "meme_" + memeNumber + ".jpg";
+            document.getElementById("memePic").src = memeFileName;
+            
+            var memeWidth = 45;
+            
+            if (memeNumber == 4)
+                memeWidth = 65;
+            else if (memeNumber == 5)
+                memeWidth = 75;
+            else if (memeNumber == 8)
+                memeWidth = 75;
+            else if (memeNumber == 9)
+                memeWidth = 25;
+            else if (memeNumber == 10)
+                memeWidth = 75;
+            else if (memeNumber == 11)
+                memeWidth = 75;
+            
+            document.getElementById("memePic").style = "width:" + memeWidth + "%;";
+
+        </script>
+        
+    </body>
+</html>
